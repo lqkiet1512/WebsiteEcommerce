@@ -1,0 +1,158 @@
+/*  File: style.css
+    Student: Mai Thanh Tung, MSSV: B1913351, tungb1913351@student.ctu.edu.vn
+    Created: 17/12/2021 
+    Ngày tạo: 10/12/2021
+    Cập nhật lần cuối: 19/12/2021
+    Tham khảo:  https://fullstack.edu.vn/
+    Tham khảo:  THEGIOIĐIONG
+
+*/
+/* pc */
+@media (min-width: 1024px) {
+    .mobile{
+        display: none;
+    }
+}
+
+/* table */
+
+@media (min-width: 740px) and (max-width: 1023px){
+    .header-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .container > .main-menu{
+        height: 90px;
+    }
+    .mobile{
+        display: none;
+    }
+    .smart-phone-row-1{
+        max-width: 100%;
+        
+    }
+    .smart-phone-row-1 .box-phone{
+        width: 250px;
+    }
+    .slider .slider-content-left{
+        width: 100%;
+    }
+    .slider .slider-content-right{
+        display: none;
+    }
+
+    .box-Macbook .box-content-item{
+        width: 33%;
+    }
+
+
+}
+
+/* phone */
+ @media (max-width: 739px) {
+    .container > .main-menu{
+        display: none;
+    }
+    .mobile .main-menu{
+        height: 50px;
+        display: flex;
+    }
+    .mobile .main-menu img{
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        padding: 3px;
+    }
+    .mobile .main-menu ul li{
+        margin: 0 4px;
+    }
+    .mobile ul li:nth-child(5) a{
+        color: #ffff2a;
+    }
+    .menu-bar ul li:nth-child(5){
+        display: none;
+    }
+    .menu-bar ul li:nth-child(6){
+        display: none;
+    } .menu-bar ul li:nth-child(7){
+        display: none;
+    } .menu-bar ul li:nth-child(8){
+        display: none;
+    } .menu-bar ul li:nth-child(9){
+        display: none;
+    }
+.menu-bar ul li:nth-child(10){
+    display: none;
+}
+
+    .header-img{
+        width: 100%;
+        height: auto;
+    }
+     #slider{
+         height: 90px;
+         width: 100%;
+     }
+    #slider-content-left{
+        width: 100%;
+
+    }
+    .slider .slider-content-left-top{
+        height: 90px;
+        width: 100%;    
+    }
+  
+    .slider .slider-content-left-top-container img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .slider .slider-content-right{
+        display: none;
+    }
+
+    .smart-phone ul li button{
+        width: 60px;
+        height: 15px;
+        font-size: 12px;
+    }
+    .smart-phone-row-1{
+        justify-content: space-between;
+    }
+    .smart-phone-row-1 .box-phone{
+        width: 48%;
+        
+    }
+
+    .classification{
+        font-size: 17px;
+    }
+    /* laptop  */
+    .box-content-item{
+        width: 48%;
+    }
+     
+    .footer .footer-content-item {
+        width: 100%;
+    }
+
+    .introduce a:nth-child(6){
+        display: none;
+    }
+    .introduce a:nth-child(7){
+        display: none;
+    }
+    .introduce a:nth-child(8){
+        display: none;
+    }
+    .slider-product-one-content-item{
+        width: 40%;
+    }
+
+
+    .slider-product-one-content-list .slider-product-one-content-item:nth-child(1){
+        display: none;
+    }
+}
+   

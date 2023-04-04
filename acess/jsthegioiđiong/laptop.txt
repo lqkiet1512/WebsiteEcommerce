@@ -1,0 +1,29 @@
+const adressbtn = document.querySelector('#adress-form')
+const adressclose = document.querySelector('#adress-close')
+//console.log (adressclose)
+adressbtn.addEventListener("click", function(){ //thêm sự kiện click
+    document.querySelector('.adress-form').style.display = "flex"
+})
+adressclose.addEventListener("click", function(){
+   document.querySelector('.adress-form').style.display = "none"
+   //console.log ("ok")
+})
+// slider-product-one
+const leftBtn = document.querySelector('.fa-arrow-circle-left')
+const rightBtn = document.querySelector('.fa-arrow-circle-right')
+const sliderDIV = document.querySelectorAll('.slider-product-one-content-list')
+let index = 0
+rightBtn.addEventListener("click", function(){
+index = index-1;
+if(index <= 0){
+index = sliderDIV.length-1;
+}
+document.querySelector(".slider-product-one-content-list-content").style.right = index *100+"%"
+})
+leftBtn.addEventListener("click", function(){
+index = index+1;
+if(index>sliderDIV.length-1){
+index = 0;
+}
+document.querySelector(".slider-product-one-content-list-content").style.right = index *100+"%"
+})

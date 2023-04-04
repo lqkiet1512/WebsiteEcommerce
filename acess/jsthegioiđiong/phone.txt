@@ -1,0 +1,54 @@
+const adressbtn = document.querySelector('#adress-form')
+const adressclose = document.querySelector('#adress-close')
+//console.log (adressclose)
+adressbtn.addEventListener("click", function(){ //thêm sự kiện click
+    document.querySelector('.adress-form').style.display = "flex"
+})
+adressclose.addEventListener("click", function(){
+   document.querySelector('.adress-form').style.display = "none"
+   //console.log ("ok")
+})
+
+const adressbt = document.querySelector('#adress-form-1')
+const adressclos = document.querySelector('#adress-close-1')
+//console.log (adressclose)
+adressbt.addEventListener("click", function(){ //thêm sự kiện click
+    document.querySelector('.adress-form-1').style.display = "flex"
+})
+adressclos.addEventListener("click", function(){
+   document.querySelector('.adress-form-1').style.display = "none"
+   //console.log ("ok")
+})
+
+//----------------slider--------------------
+const rightbtn = document.querySelector('.fa-chevron-right')
+const leftbtn = document.querySelector('.fa-chevron-left')
+const imgNuber = document.querySelectorAll('.slider-content-left-top img')
+//console.log (imgNuber.length)
+let index = 0
+rightbtn.addEventListener("click", function(){
+    index = index+1
+    if(index>imgNuber.length-1){
+        index=0
+    }
+    document.querySelector(".slider-content-left-top").style.right = index *100+"%" //các phần tử nằm trong <div class="slider-content-left-top" sẽ dịch chuyển sang bên trái cách bên phải 100%
+})
+leftbtn.addEventListener("click", function(){
+    index = index-1
+    if(index<=0){
+        index=imgNuber.length-1
+    }
+    document.querySelector(".slider-content-left-top").style.right = index *100+"%"
+})
+
+// //-------------------slider2---------------Xủ lí Slider chạy tự động-------------
+// function imgAuto () {
+//     index = index +1
+//     if(index>imgNuber.length-1){
+//         index=0
+//     }
+//     removeactive()
+//     document.querySelector(".slider-content-left-top").style.right = index *100+"%"
+//     imgNuberone[index].classList.add("active")
+// }
+// setInterval(imgAuto,5000)

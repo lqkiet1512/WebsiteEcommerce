@@ -1,0 +1,307 @@
+    /*  File: responsive.css
+    Student: Le Quoc Kiet, MSSV: B1906503, kietb1906503@student.ctu.edu.vn
+    Created: 17/12/2021 --> */
+/* ------Responsive------ */
+/* pc */
+@media (min-width: 1024px) {
+    .mobile{
+        display: none;
+    }
+    .taskbar {
+        display: none;
+    }
+    .product-gallery-two-content-product-item:last-child {
+        display: none;
+    }
+    .product-gallery-three-content-product-item:last-child {
+        display: none;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header img{
+        width: 100%;
+        height: auto;
+    }
+    .container > img{
+        width: 100%;
+        height: auto;
+    }
+    .mobile{
+        display: none;
+    }
+    .taskbar {
+        display: none;
+    }
+    .product-gallery-two-content-product-item:last-child {
+        display: none;
+    }
+    .product-gallery-three-content-product-item:last-child {
+        display: none;
+    }
+}
+/* Phone */
+@media ( max-width: 739px) {
+    .header img{
+        width: 100%;
+        height: auto;
+    }
+    .mobile .main-menu{
+        height: 50px;
+        display: flex;
+        padding: 0 25px;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .mobile .main-menu img{
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+        padding: 3px;
+    }
+    .mobile .main-menu ul li{
+        margin: 0 4px;
+    }
+    .container > .main-menu{
+        display: none;
+    }
+    nav ul li:nth-child(3) input {
+        height: 25px;
+        width: 120px;
+    }
+    /* taskbar */
+    .menu-bar {
+        display: none;
+    }
+    .taskbar {
+        background-color: white;
+    }
+    .taskbar ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .taskbar li {
+        width: 100px;
+        line-height: 20px;
+        border: 1px solid rgba(0, 0, 0,0.2);
+        background-color: white;
+        border-radius: 5px;
+        margin: 3px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0,0.2);
+    }
+    .taskbar a {
+        color: black;
+        transition: all 0.3s ease;
+        
+    }
+    .taskbar li:hover {
+        background-color: #54a8fc;
+    }
+    /* Sim, thẻ cảo */
+    .taskbar ul li:nth-child(4) {
+        position: relative;
+    }
+    /* Xử lí nút giảm 5% */
+    .taskbar-content > li:nth-child(4)::before { 
+        position: absolute;
+        content: "Giảm 5%";
+        display: block;
+        height: 15px;
+        width: 45px;
+        background-color: #F51212;
+        border-radius: 5px;
+        right: 8px;
+        top: -12px;
+        font-size: 10px;
+        padding-left: 2px;
+        color: white;
+    }
+    .taskbar-content > li:nth-child(4)::after { 
+        position: absolute;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 4px;
+        background-color: #F51212;
+        right: 42px;
+        top: 1px;
+        z-index: 2;
+        transform: rotate(45deg);
+    }
+    /* Submenu */
+    .submenu ul li {
+        display: none;
+    }
+    .adress-form-content {
+        opacity: 0;
+    }
+    /* Slider */
+    .slider {
+        height: 120px;
+        padding: 6px 0;
+    }
+    .slider-content-left {
+        width: 100%;
+    }
+    .slider-content-left-top {
+        width: 100%;
+        height: 120px;  
+    }
+    .slider-content-left-top img {
+        width: 100%;
+        height: auto;
+    }
+    .slider-content-left-top-btn {
+        display: none;
+    }
+    .slider-content-left-bottom {
+        display: none;
+    }
+    .slider-content-left-bottom li {
+        display: none;
+    }
+    .slider-content-right {
+        display: none;
+    }
+    /* baner-one */
+    .baner-one {
+        margin: 12px 6px 6px;
+    }
+    .baner-one img {
+        width: 100%;
+        height: 25px;
+        border-radius: 5px;
+    }
+    /* Slider-product-one */
+    .slider-product-one-content-btn {
+        display: none;
+    }
+    .slider-product-one-content-items-content {
+        height: 420px;
+        overflow: scroll;
+    }
+    .slider-product-one-content-item:hover > img {
+        transform: translateY(0);
+    }
+    .slider-product-one-content-item-text li:first-child {
+        display: none;
+    }
+    .slider-product-one-content-item-text li:last-child {
+        display: none;
+    }
+    .slider-product-one-content-items:nth-child(3) {
+        display: none;
+    }
+    /* product-gallery-one-title */
+    .product-gallery-one-content-title{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .product-gallery-one-content-title h2 {
+        padding-left: 6px;
+        padding-bottom: 6px;
+    }
+    .product-gallery-one-content-title li {
+        padding: 0;
+        margin: 0 6px;
+        text-align: center;
+    }
+    .product-gallery-one-content-product {
+        justify-content: space-evenly;    
+    }
+    .product-gallery-one-content-product-item {
+        width: 30%;
+        padding: 12px 6px 6px;
+    }
+    .product-gallery-one-content-product-item:hover >img {
+        transform: translateY(0);
+    }
+    .product-gallery-one-content-product-item li:first-child {
+        display: none;
+    }
+    .product-gallery-one-content-product-item li:last-child {
+        display: none;
+    }
+    .product-gallery-one-content-product-item:last-child {
+        display: none;
+    }
+    /* product-gallery-two-title */
+    .product-gallery-two-content-title{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .product-gallery-two-content-title h2 {
+        padding-left: 6px;
+        padding-bottom: 6px;
+    }
+    .product-gallery-two-content-title li {
+        padding: 0;
+        margin: 0 6px;
+        text-align: center;
+    }
+    .product-gallery-two-content-product {
+        justify-content: space-evenly;
+        
+    }
+    .product-gallery-two-content-product-item {
+        width: 30%;
+        padding: 12px 6px 6px;
+    }
+    .product-gallery-two-content-product-item:hover >img {
+        transform: translateY(0);
+    }
+    .product-gallery-two-content-product-item li:first-child {
+        display: none;
+    }
+    .product-gallery-two-content-product-item li:last-child {
+        display: none;
+    }
+    /* product-gallery-three-title */
+    .product-gallery-three-content-title{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .product-gallery-one-content-title h2 {
+        padding-left: 6px;
+        padding-bottom: 6px;
+    }
+    .product-gallery-three-content-title li {
+        padding: 0;
+        margin: 0 6px;
+        text-align: center;
+    }
+    .product-gallery-three-content-product {
+        justify-content: space-evenly;   
+    }
+    .product-gallery-three-content-product-item {
+        width: 30%;
+        padding: 12px 6px 6px;
+    }
+    .product-gallery-three-content-product-item:hover >img {
+        transform: translateY(0);
+    }
+    .product-gallery-three-content-product-item li:first-child {
+        display: none;
+    }
+    .product-gallery-three-content-product-item li:last-child {
+        display: none;
+    }
+    /* product-four */
+    .product-gallery-four {
+        display: none;
+    }
+    /* Footer */
+    .footer-content {
+        width: 100%;
+    }
+    .footer-content-item {
+        width: 100%;
+
+    }
+    .footer-content-item:first-child {
+        display: none;
+    }
+    .footer-content-item:nth-child(2) {
+        display: none;
+    }
+}

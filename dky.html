@@ -1,0 +1,285 @@
+<!-- /*  File: dky.html
+    Student: Mai Thanh Tung, MSSV: B1913351, tungb1913351@student.ctu.edu.vn
+    Created: 17/12/2021 
+    Ngày tạo: 1/12/2021
+    Cập nhật lần cuối: 19/12/2021
+    Tham khảo:  https://fullstack.edu.vn/
+    Tham khảo:  THEGIOIĐIONG
+
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./acess/css/responsivesanpham.css">
+    <link rel="stylesheet" href="./acess/css/css.css">
+    <link rel="stylesheet" href="./acess/css/dnhap-dky.css">
+    <link rel="stylesheet" href="../acess/font/fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+    <!-- Page content -->
+    <header>
+        <a href="./trangchu.html"><img class="header-img" src="./acess/image/anh1.png" alt=""></a>
+        
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="main-menu">
+                <li><a href=""><img style="width: 150px;" src="/image/logo.png" alt=""></a></li> <!-- Logo thế giới di động -->
+                <li id="adress-form"><a href="#"><p>Xem giá, khuyến mãi tại</p>Cần Thơ<i class="fas fa-sort-down"></i></a></li> <!-- Các danh mục xem giá khuyến mãi, tìm kiếm, giỏ hàng, lịch sử đơn hàng,.. -->
+                <li><input type="text" placeholder="Bạn cần gì..."><i class="fas fa-search"></i></li>
+                <li><a href=""></a><i class="fas fa-shopping-cart"></i>Giỏ hàng</li>
+                <li><a href="">Lịch sử đơn hàng</a></li>
+                <li><a href=""><span class="btn-content"><span class="btn-top"></span></span> Mua thẻ thanh toán</a></li>
+                <li><a href="">24h Công nghệ</a></li>
+                <li><a href="./dky.html">ĐĂNG KÝ</a></li>
+                <li><a href="./dnhap.html">ĐĂNG NHẬP</a></li>
+                <div class="adress-form"> <!-- Form giá khuyến mãi tại... -->
+                    <div class="adress-form-content">
+                        <h2>Chọn địa chỉ nhận hàng<span id="adress-close">x Đóng</span></h2>
+                        <form action="">
+                            <p><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</p>
+                            <select name="">
+                                <option value="#">Cần Thơ</option>
+                                <option value="#">Hồ Chí Minh</option>
+                                <option value="#">Bạc Liêu</option>
+                            </select>
+                            <select name="">
+                                <option value="#">Vui lòng chọn Quận/Huyện</option>
+                                <option value="#">Quận Ninh Kiều</option>
+                                <option value="#">Quận Cái Răng</option>
+                                <option value="#">Quận Ô Môn</option>
+                            </select>
+                            <select name="">
+                                <option value="#">Vui lòng chọn Phường/Xã</option>
+                                <option value="#">Phường An Khánh</option>
+                                <option value="#">Phường Hưng Lợi</option>
+                                <option value="#">Phường Thới An</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <nav>
+    <nav class="mobile">
+        <div class="main-menu">
+            <ul>   
+                <li><a href=""><img src="./acess/img/images.jfif" alt=""></a></li> <!-- Logo thế giới di động -->
+                <li id="adress-form-1"><a href="#">Cần Thơ<i class="fas fa-sort-down"></i></a></li> <!-- Các danh mục xem giá khuyến mãi, tìm kiếm, giỏ hàng, lịch sử đơn hàng,.. -->
+                <li><input type="text" placeholder="Bạn cần gì..."><i class="fas fa-search"></i></li>
+                <li><a href=""></a><i class="fas fa-shopping-cart"></i>Giỏ hàng</li>
+                <li><a href="./dky.html">ĐĂNG KÝ</a></li>
+                <li><a href="./dnhap.html">ĐĂNG NHẬP</a></li>
+                <div class="adress-form-1"> <!-- Form giá khuyến mãi tại... -->
+                    <div class="adress-form-content">
+                        <h2>Chọn địa chỉ nhận hàng<span id="adress-close-1">x Đóng</span></h2>
+                        <form action="">
+                            <p><b>Chọn đầy đủ địa chỉ nhận hàng</b> để biết chính xác thời gian giao</p>
+                            <select name="">
+                                <option value="#">Cần Thơ</option>
+                                <option value="#">Hồ Chí Minh</option>
+                                <option value="#">Bạc Liêu</option>
+                            </select>
+                            <select name="">
+                                <option value="#">Vui lòng chọn Quận/Huyện</option>
+                                <option value="#">Quận Ninh Kiều</option>
+                                <option value="#">Quận Cái Răng</option>
+                                <option value="#">Quận Ô Môn</option>
+                            </select>
+                            <select name="">
+                                <option value="#">Vui lòng chọn Phường/Xã</option>
+                                <option value="#">Phường An Khánh</option>
+                                <option value="#">Phường Hưng Lợi</option>
+                                <option value="#">Phường Thới An</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+             </ul>
+         
+        </div>
+        
+
+    </nav> 
+    </nav>
+ 
+    <section class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href="./Phone.html"><i class="fas fa-mobile-alt"></i> Điện thoại</a></li>
+                    <li><a href="./Laptop.html"><i class="fas fa-laptop"></i> Laptop</a></li>
+                    <li><a href=""><img style="width: 15px" src="/image/tablet.png" alt=""> Tablet</a></li>
+                    <li><a href=""><i class="fas fa-headphones-alt"></i> Phụ kiện<i class="fas fa-sort-down"></i></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Pin sạc dự phòng</a></li>
+                                <li><a href="">Sạc, Cáp</a></li>
+                                <li><a href="">Miếng dán màn hình</a></li>
+                                <li><a href="">Ốp lưng điện thoại</a></li>
+                                <li><a href="">Ốp lưng máy tính bảng</a></li>
+                                <li><a href="">Gậy tự sướng</a></li>
+                                <li><a href="">Pin sạc dự phòng</a></li>
+                                <li><a href="">Pin sạc dự phòng</a></li>
+                                <li><a href="">Pin sạc dự phòng</a></li>
+                                <li><a href="">Pin sạc dự phòng</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href><img style="width: 15px" src="/image/smartwatch.png" alt=""> Đồng hồ thông minh</a></li>
+                    <li><a href=""><img style="width: 15px" src="/image/watch.png" alt=""> Đồng hồ thời trang</a></li>
+                    <li><a href=""><i class="fas fa-desktop"></i> PC, Máy in</a> <i class="fas fa-sort-down"></i>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Máy in</a></li>
+                                <li><a href="">Mực in</a></li>
+                                <li><a href="">Màn hình máy tính</a></li>
+                                <li><a href="">Máy tính để bàn</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Máy cũ giá rẻ</a></li>
+                    <li><a href="">Sim, Thẻ cào</a></li>
+                    <li><a href="">Trả góp, Điện nước</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="content_sign-up">
+        <h2 class="content-heading">Đăng ký tài khoản</h2>
+        <div id="sign-up" class="sign-up">
+            <div class="left">
+                <form action="" method="POST" class="form" id="form-1">
+                    <div class="form-group">
+                        <label for="fullname" class="required" for="">Tên người dùng</label>
+                        <input class="auth-from__input" type="text" name="fullname" id="fullname" placeholder="Eg. thanhhoax07" />
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="required">Email của bạn</label>
+                        <input class="auth-from__input" type="email" name="email" id="email" placeholder="Eg. abc@gmail.com" />
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" id="password-normal" class="required">Mật khẩu của bạn</label>
+                        <input class="auth-from__input" type="password" name="password" id="password1" placeholder="Mật khẩu của bạn" />
+                        <i class="fas fa-eye" aria-hidden="true" type="button" id="eye1"></i>
+                        <p id="message">Password is <span id="strenght"></span></p>
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2" id="password-repeat" class="required">Nhập lại mật khẩu</label>
+                        <input class="auth-from__input" type="password" name="check-password" id="password2" placeholder="Nhập lại mật khẩu" />
+                        <i class="fas fa-eye" aria-hidden="true" type="button" id="eye2"></i>
+                        <span class="form-message"></span>
+                    </div>
+                    <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
+                    <label class="log__form-form-label label-show-password" for="show-password">
+                        <span class="log__form-form-label-span">Nhớ mật khẩu</span>
+                    </label>
+                    <div class="form__aside">
+                        <p class="form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Tiki về
+                            <a href="#" class="form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="#" class="form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <input type="submit" class="form-submit" value="Đăng ký"></input>
+                </form>
+            </div>
+           
+        </div>
+        <p class="member">Bạn có phải là thành viên? <a href="dang-nhap.html" class="link">Login now</a></p>
+    </div>
+
+    <script src="./acess/jsthegioiđiong/phone.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dựa vào file js đã được dựng sẵn
+            Validator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                // Khi muốn bắt buộc thằng nào thì chọn đúng thằng đó và lấy id của nó
+                rules: [
+                    // Gọi đến đối số của từng hàm đã được khai báo
+                    Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                    Validator.isRequired('#email'),
+                    Validator.isEmail('#email'),
+                    Validator.isRequired('#password1'),
+                    Validator.minLength('#password1', 6),
+                    Validator.isRequired('#password2'),
+                    Validator.isConfirmed('#password2', function() {
+                        // Trả về giá trị người dùng nhập vào ở ô password nếu không khớp sẽ báo lỗi bên dưới
+                        return document.querySelector('#form-1 #password1').value;
+                    }, 'Mật khẩu nhập không chính xác')
+                ],
+                onSubmit: function(data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+        });
+    </script>   
+      <footer class="footer">
+        <div class="container">
+            <footer class="footer-content">
+                      <div class="footer-content-item">
+                           <p><b>Lịch sử mua hàng</b></p>
+                           <p>Cộng tác mua hàng cùng TGDĐ</p>
+                           <p>Tìm hiểu về mua trả góp</p>
+                           <p>Chính sách bảo hành</p>
+                       </div>
+                       <div class="footer-content-item">
+                           <p><b>Giới thiệu công ty (MWG.vn)</b></p>
+                           <p>Tuyển dụng</p>
+                           <p>Gửi góp ý, khiếu nại</p>
+                           <p>Tìm siêu thị (2.902 shop)</p>
+                       </div>
+                       <div class="footer-content-item">
+                           <p><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</p>
+                           <p>Gọi mua: <span>1800.1060</span> (7:30 - 22:00)</p>
+                           <p>Kỹ thuật: <span>1800.1060</span> (7:30 - 22:00)</p>
+                           <p>Khiếu nại: <span>1800.1060</span> (8:00 - 21:30)</p>
+                           <p>Bảo hành: <span>1800.1060</span> (8:00 - 21:00)</p>
+                       </div>
+                       <div class="footer-content-item">
+                           <i class="fab fa-facebook" style="color: rgb(0, 29, 255) ;"></i> Facebook
+                           <i class="fab fa-youtube" style="color: #de1c05 ;"></i> Youtube
+                           <div class="footer-content-item-img">
+                               <img src="./acess/image/ft1.png" alt="">
+                               <img src="./acess/image/ft2.png" alt="">
+                               <img src="./acess/image/ft3.png" alt="">
+                               <p>Website cùng tập đoàn</p>
+                               <img src="./acess/image/logo1.png" alt="">
+                               <img src="./acess/image/logo2.png" alt="">
+                           </div>
+                       </div>
+       
+       <div class="footer-content-item2">
+           <p>
+               © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+               Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt.
+               <a href="https://www.thegioididong.com/thoa-thuan-su-dung-trang-mxh" style="color: rgb(0, 29, 255);">Xem chính sách sử dụng</a>
+           </p>
+       </div>
+            </footer>
+       
+        </div>
+   
+      
+   </footer>
+</body>
+</html>
+

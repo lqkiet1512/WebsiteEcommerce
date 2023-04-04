@@ -1,0 +1,68 @@
+// <!--File: giohang.js 
+//     Student: Le Quoc Kiet, MSSV: B1906503, kietb1906503@student.ctu.edu.vn
+//     Created: 17/12/2021
+//     Update: 20/12/2021
+//     Tham khảo: https://fullstack.edu.vn/, https://www.thegioididong.com/, https://www.youtube.com/channel/UCg3x5Onr4jVgzKuC73V2NiQ
+// --> Em chưa xử lí được tính tổng tiền của các sản phẩm, đã xử lí được thêm và xóa sản phẩm
+//Thêm sản phẩm vào giỏ hàng
+const btn = document.querySelectorAll("button")
+btn.forEach(function(button,index){
+button.addEventListener("click", function(event){
+    var btnItem = event.target
+    var product = btnItem.parentElement
+    var productImg = product.querySelector("img").src //Lấy ảnh sản phẩm
+    var productName = product.querySelector("h1").innerText //Lấy tên sản phẩm
+    var productPrice = product.querySelector("span").innerText //Lấy giá sản phẩm
+    //console.log(productPrice, productImg, productName)
+    addcart(productPrice, productImg, productName)
+})   
+})
+function addcart(productPrice, productImg, productName)  { // vào trong giỏ hàng lập hết tất cả các sản phẩm để lấy tên giỏ hàng=title sau đó gán vào biến productT
+    var addtr = document.createElement("tr")
+    var cartItem = document.querySelectorAll("tbody tr")
+    for (var i=0; i<cartItem.length; i++){
+        var productT = document.querySelectorAll(".title")
+        if(productT[i].innerHTML == productName) {
+            alert ("Sản phẩm của bạn đã có trong giỏ hàng")
+            return
+        }
+    }
+    var trcontent = '<tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="'+productImg+'" alt=""><span class="title">'+productName+'</span></td><td><p><span class="prices">'+productPrice+'</span></p></td><td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;" ><span class="cart-delete">Xóa</span></td></tr>'
+    addtr.innerHTML = trcontent
+    var cartTable = document.querySelector("tbody")
+    cartTable.append(addtr)
+    carttotal()
+    deleteCart()
+}
+//---------Price-total----------------
+function carttotal (){
+    var cartItem = document.querySelectorAll("tbody tr")
+    var totalC = 0
+    for (var i=0; i<cartItem.length; i++){
+        var inputValue = cartItem[i].querySelector("input").value
+        //console.log(inputValue)
+        var productPrice = cartItem[i].querySelector(".prices").innerHTML
+        //console.log(productPrice)
+        totalA = inputValue*productPrice*1000
+        //totalB = totalA.toLocaleString('de-DE')
+        //console.log(totalA)
+        totalC = totalC + totalA
+        //console.log(totalC)
+        totalD = totalC.toLocaleString('de-DE')
+    }
+    var cartTotalA = document.querySelectorAll(".price-total span")
+    cartTotalA.innerHTML = totalD
+    //console.log(cartTotalA)
+}
+//---------------Xóa sản phẩm-------------
+function deleteCart () {
+    var cartItem = document.querySelectorAll("tbody tr")
+    for (var i=0; i<cartItem.length; i++){
+        var productT = document.querySelectorAll(".cart-delete")
+         productT[i].addEventListener("click", function(event){
+             var cartDelete = event.target
+             var cartitemR = cartDelete.parentElement.parentElement
+             cartitemR.remove()
+        })
+}
+}
